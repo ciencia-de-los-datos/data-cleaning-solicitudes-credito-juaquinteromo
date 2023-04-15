@@ -11,7 +11,7 @@ import pandas as pd
 
 def clean_data():
 
-    df = pd.read_csv("solicitudes_credito.csv", sep=";")
+    dataframe = pd.read_csv("solicitudes_credito.csv", sep=";")
 
     del dataframe['Unnamed: 0']
     dataframe = dataframe.dropna().drop_duplicates()
